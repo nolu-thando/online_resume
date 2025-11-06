@@ -1,7 +1,3 @@
- // Dark Mode Toggle
-    function toggleMode() {
-      document.body.classList.toggle('dark');
-    }
 
     // Scroll Animation
     const sections = document.querySelectorAll('.section');
