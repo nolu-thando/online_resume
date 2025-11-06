@@ -108,7 +108,56 @@ h2 {
   text-decoration: none;
   font-weight: 600;
 }
+/*education*/
+.education-section h2 {
+    color: #0d7b7b;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
 
+.education-entry {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #0d7b7b;
+}
+
+.education-entry h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.education-entry p {
+    font-size: 1em;
+    color: #666;
+    margin: 5px 0;
+}
+
+.education-entry .description {
+    font-style: italic;
+    color: #555;
+}
+
+.education-entry p strong {
+    color: #0d7b7b;
+}
+
+@media screen and (max-width: 768px) {
+    .education-section {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .education-entry h3 {
+        font-size: 1.3em;
+    }
+
+    .education-entry p {
+        font-size: 0.95em;
+    }
+}
 /* Theme Toggle Button */
 body.dark-mode {
   --primary: #8A71C9;       /* deeper lilac */
