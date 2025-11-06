@@ -1,57 +1,86 @@
+/* ------------------ GLOBAL STYLES ------------------ */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #f6f8fa;
   color: #333;
-  background-color: #f9f9f9;
+  line-height: 1.6;
 }
 
+/* Container */
 .container {
   text-align: center;
   padding: 20px;
 }
 
-header {
-  background-color: #005f73;
-  color: white;
-  padding: 30px 0;
+/* ------------------ HEADER / HERO ------------------ */
+.hero {
+  background: linear-gradient(135deg, #005f73, #0a9396);
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
 }
 
-header a {
+.name {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.contact, .links {
+  margin: 10px 0;
+  font-size: 0.95rem;
+}
+
+.hero a {
   color: #ffdd57;
   text-decoration: none;
+  font-weight: 600;
+  margin: 0 8px;
 }
 
-section {
-  max-width: 800px;
+.hero a:hover {
+  text-decoration: underline;
+}
+
+/* ------------------ SECTIONS ------------------ */
+.section {
+  max-width: 900px;
   margin: 40px auto;
-  padding: 20px;
+  padding: 30px;
   background: white;
-  border-radius: 10px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+  transition: 0.3s ease-in-out;
 }
 
+.section:hover {
+  transform: translateY(-3px);
+}
+
+/* Headings */
 h2 {
   color: #0a9396;
-  border-bottom: 2px solid #0a9396;
-  padding-bottom: 5px;
+  border-left: 4px solid #0a9396;
+  padding-left: 10px;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
+/* ------------------ SKILLS ------------------ */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
-ul li {
+.skills-grid span {
   background: #e0fbfc;
-  margin: 5px 0;
-  padding: 8px;
-  border-radius: 5px;
-}
-
-footer {
-  text-align: center;
-  padding: 10px;
-  background-color: #005f73;
-  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
 }
