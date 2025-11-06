@@ -34,7 +34,7 @@ body.dark .toggle-btn {
 /* Sidebar */
 .sidebar {
   background: #005f73;
-  color: white;
+  color: #e0fbfc;
   padding: 30px 20px;
   text-align: center;
 }
@@ -59,7 +59,7 @@ body.dark .toggle-btn {
 
 /* Sections */
 .section {
-  background: white;
+  background: lightgrey;
   margin: 20px;
   padding: 25px;
   border-radius: 12px;
@@ -123,5 +123,32 @@ h2 {
   border-radius: 6px;
   text-decoration: none;
   font-weight: 600;
+}
+
+/* Theme Toggle Button */
+body.dark-mode {
+  --primary: #8A71C9;       /* deeper lilac */
+  --secondary: #3A2F4F;     /* lavender charcoal */
+  --accent: #BFA8EF;        /* soft glowing lilac */
+  --light: #2B2336;         /* dark background */
+  --text-dark: #F4F0FF;     /* light text */
+  --text-light: #ffffff;
+  background: var(--light);
+}
+
+/* Dark mode button style */
+.theme-btn {
+  background: var(--accent);
+  color: var(--text-light);
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.theme-btn:hover {
+  background: var(--primary);
 }
 
