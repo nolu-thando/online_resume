@@ -7,22 +7,6 @@ body {
   transition: 0.4s ease-in-out;
 }
 
-/* Dark Mode */
-body.dark {
-  background: #0d1b1e;
-  color: #e0fbfc;
-}
-body.dark .section,
-body.dark .sidebar {
-  background: #132a2f;
-  color: #e0fbfc;
-}
-body.dark a {
-  color: #94d2bd;
-}
-body.dark .toggle-btn {
-  background: #94d2bd;
-}
 
 /* Layout */
 .wrapper {
