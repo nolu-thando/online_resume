@@ -131,6 +131,15 @@ body.dark-mode {
   font-size: 14px;
   margin: 10px 0;
 }
+body.dark-mode .sidebar {
+  background-color: var(--secondary) !important;
+  color: var(--text-dark);
+}
+body.dark-mode .sidebar a,
+body.dark-mode .sidebar p,
+body.dark-mode .sidebar h2 {
+  color: var(--text-dark) !important;
+}
 
 .theme-btn:hover {
   background: var(--primary);
