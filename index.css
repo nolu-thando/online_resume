@@ -92,10 +92,51 @@ h2 {
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   transition: 0.3s;
+    width: 350px;
+    height: 450px;
+    perspective: 1000px;
 }
 
 .project-card:hover {
   transform: translateY(-5px);
+}
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s ease;
+}
+
+/* Front & Back Faces */
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba(255, 120, 160, 0.4);
+}
+
+/* Front Image */
+.card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Back Content */
+.card-back {
+    background: linear-gradient(135deg, #ffedf5, #ffb3d1);
+    transform: rotateY(180deg);
+    padding: 30px;
+    color: #4a003b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
 /* Download Button */

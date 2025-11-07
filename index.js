@@ -24,3 +24,20 @@
       toggleBtn.textContent = "🌙 Dark Mode";
     }
   });
+  //Card Flip
+  const card = document.querySelector(".project-card");
+const inner = document.querySelector(".card-inner");
+
+card.addEventListener("mousemove", (e) => {
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left - rect.width / 2;
+
+    // If cursor is near the card, flip
+    if (Math.abs(x) < rect.width / 2 + 80) {
+        inner.style.transform = "rotateY(180deg)";
+    }
+});
+
+card.addEventListener("mouseleave", () => {
+    inner.style.transform = "rotateY(0deg)";
+});
