@@ -98,7 +98,9 @@ h2 {
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
+ .project-card:hover .card-inner {
+    transform: rotateY(180deg);
+}
 }
 .card-inner {
     width: 100%;
